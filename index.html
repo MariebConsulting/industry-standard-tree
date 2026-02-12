@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Industry Standard Tree Service | Fort Wayne, IN</title>
+  <meta name="description" content="Tree removal, stump grinding, trimming & storm cleanup in Fort Wayne and Northeast Indiana. Call or text for a free quote." />
+  <meta name="theme-color" content="#1f3a2b" />
+
+  <!-- Social (OG = “Open Graph” preview image used by Facebook/iMessage/etc.) -->
+  <meta property="og:title" content="The Industry Standard Tree Service" />
+  <meta property="og:description" content="Fast, safe, clean tree service. Call/text for a free quote." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:image:alt" content="JC working in the bucket truck" />
+
+  <!-- Fonts (stencil headline + clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "The Industry Standard Tree Service",
+    "telephone": "+12602981652",
+    "areaServed": "Fort Wayne, IN and Northeast Indiana",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fort Wayne",
+      "addressRegion": "IN",
+      "postalCode": "46845",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <style>
+    /* Light additions just for images + gallery (keeps your existing styles.css intact) */
+
+    /* HERO image: match gallery card height so layout feels consistent */
+    .hero__image{
+      height: 320px;                 /* matches .shot img height */
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.12);
+      background: rgba(255,255,255,.35);
+      overflow: hidden;
+    }
+    .heroPhoto{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:12px;
+      margin-top:16px;
+    }
+    .shot{
+      border-radius:18px;
+      border:1px solid rgba(0,0,0,.12);
+      background:rgba(255,255,255,.35);
+      overflow:hidden;
+    }
+    .shot img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      display:block;
+    }
+    .shot figcaption{
+      padding:10px 12px;
+      font-weight:800;
+      color:rgba(0,0,0,.72);
+      font-size:13px;
+    }
+
+    /* JC photo block (no "About" copy — just the face + label) */
+    .jcWrap{
+      margin-top: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,.12);
+      background: rgba(255,255,255,.35);
+      overflow: hidden;
+    }
+    .jcWrap img{
+      width:100%;
+      height: 260px;
+      object-fit: cover;
+      display:block;
+    }
+    .jcCap{
+      padding:10px 12px;
+      font-weight:800;
+      color:rgba(0,0,0,.72);
+      font-size:13px;
+    }
+
+    @media (max-width: 980px){
+      .gallery{grid-template-columns:1fr}
+      .shot img{height:260px}
+      .hero__image{height:260px}
+      .jcWrap img{height:240px}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sticky call bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark">IS</span>
+        <span class="brand__name">Industry Standard Tree Service</span>
+      </a>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="#services">Services</a>
+        <a class="btn btn--ghost" href="#photos">Photos</a>
+        <a class="btn btn--ghost" href="#contact">Free Quote</a>
+        <a class="btn btn--primary" href="tel:+12602981652" aria-label="Call JC">
+          Call JC: (260) 298-1652
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating mobile actions -->
+  <div class="fab">
+    <a class="fab__btn" href="tel:+12602981652" aria-label="Call JC">
+      <span class="fab__icon">📞</span><span>Call</span>
+    </a>
+    <a class="fab__btn" href="sms:+12602981652" aria-label="Text JC">
+      <span class="fab__icon">💬</span><span>Text</span>
+    </a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge">FORT WAYNE • NORTHEAST INDIANA • 46845</p>
+          <h1>FAST. SAFE. CLEAN.<br><span class="accent">TREE & STUMP</span> SERVICE.</h1>
+          <p class="lead">
+            Tree removal, stump grinding, trimming/pruning, and storm cleanup — built around safety and clean job sites.
+            <strong>Call or text for a free quote.</strong>
+          </p>
+
+          <div class="cta">
+            <a class="btn btn--primary btn--lg" href="tel:+12602981652">Call Now</a>
+            <a class="btn btn--secondary btn--lg" href="sms:+12602981652">Text Now</a>
+            <button class="btn btn--ghost btn--lg" id="openQuote">Use Form</button>
+          </div>
+
+          <div class="proof">
+            <div class="proof__item">
+              <div class="proof__title">Safety First</div>
+              <div class="proof__sub">Safety meetings before every job</div>
+            </div>
+            <div class="proof__item">
+              <div class="proof__title">Arborist</div>
+              <div class="proof__sub">Certified arborist on staff*</div>
+            </div>
+            <div class="proof__item">
+              <div class="proof__title">Emergency</div>
+              <div class="proof__sub">Rapid response for storm damage</div>
+            </div>
+          </div>
+
+          <p class="fineprint">*Only show if verified. Replace with your real credentials/ISA number if applicable.</p>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__card">
+            <div class="hero__cardTop">
+              <div class="kicker">Quick Quote</div>
+              <div class="mini">Text a photo + address and we’ll respond fast.</div>
+            </div>
+            <div class="hero__cardActions">
+              <a class="btn btn--primary btn--full" href="sms:+12602981652?&body=Hi%20JC%20%E2%80%94%20I%27d%20like%20a%20free%20quote.%20Name%3A%20%0AAddress%3A%20%0APhone%3A%20%0AWhat%20do%20you%20need%3A%20">
+                Text for Quote
+              </a>
+              <a class="btn btn--ghost btn--full" href="#contact">Or use the form</a>
+            </div>
+          </div>
+
+          <!-- HERO IMAGE (same height as gallery shots) -->
+          <div class="hero__image">
+            <img class="heroPhoto" src="assets/job2.jpg" alt="Tree service crew working safely with bucket truck" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVED CTA: now ABOVE Services -->
+    <section class="section" aria-label="Fast quote CTA" style="padding-top:0;">
+      <div class="container">
+        <div class="callout">
+          <div>
+            <div class="callout__title">Want a quote fast?</div>
+            <div class="callout__sub">Call or text a photo + address.</div>
+          </div>
+          <div class="callout__actions">
+            <a class="btn btn--primary" href="tel:+12602981652">Call Now</a>
+            <a class="btn btn--secondary" href="sms:+12602981652">Text Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Everything you need — no fluff. If it involves trees, we handle it.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card"><h3>Tree Removal</h3><p>Hazard trees, tight spaces, controlled drops, and full haul-off.</p></article>
+          <article class="card"><h3>Stump Grinding</h3><p>Grind stumps below grade so you can re-seed, landscape, or build.</p></article>
+          <article class="card"><h3>Trimming / Pruning</h3><p>Health, safety, and clearance trims — done right, not hacked.</p></article>
+          <article class="card"><h3>Storm & Emergency Cleanup</h3><p>Rapid response when trees fall, split, or threaten structures.</p></article>
+          <article class="card"><h3>Cabling / Bracing</h3><p>Structural support options when removal isn’t the best move.</p></article>
+          <article class="card"><h3>Land Clearing (Small)</h3><p>Selective clearing and brush removal for projects and lots.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section section--alt" id="photos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Photos</h2>
+          <p>Real work. Real equipment. Clean sites.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot">
+            <img src="assets/job1.jpg" alt="Tree service job photo 1" loading="lazy">
+            <figcaption>Controlled work in tight spaces</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/job2.jpg" alt="Tree service job photo 2" loading="lazy">
+            <figcaption>Bucket truck operations</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/job3.jpg" alt="Tree service job photo 3" loading="lazy">
+            <figcaption>Hazard removals & storm response</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/job4.jpg" alt="Tree service job photo 4" loading="lazy">
+            <figcaption>Pruning, trimming, and cleanup</figcaption>
+          </figure>
+        </div>
+
+        <div class="callout" style="margin-top:16px;">
+          <div>
+            <div class="callout__title">Best way to get a fast quote</div>
+            <div class="callout__sub">Text a photo + your address.</div>
+          </div>
+          <div class="callout__actions">
+            <a class="btn btn--secondary" href="sms:+12602981652">Text Now</a>
+            <a class="btn btn--primary" href="tel:+12602981652">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Free Quote</h2>
+          <p><strong>Best:</strong> call or text. If you prefer, use the form and we’ll email the lead to JC via Formspree.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__left">
+            <div class="contact__card">
+              <div class="contact__label">Call or Text</div>
+              <a class="contact__phone" href="tel:+12602981652">(260) 298-1652</a>
+              <div class="contact__hours">Typical response: same day</div>
+              <div class="contact__btns">
+                <a class="btn btn--primary btn--full" href="tel:+12602981652">Call Now</a>
+                <a class="btn btn--secondary btn--full" href="sms:+12602981652">Text Now</a>
+              </div>
+
+              <!-- JC photo placed under the call/text box (no "About" section) -->
+              <div class="jcWrap">
+                <img src="assets/jc.jpg" alt="JC — Owner" loading="lazy">
+                <div class="jcCap">JC — Owner</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__right">
+            <form class="form" id="quoteForm">
+              <input type="hidden" name="_subject" value="Tree Service Quote Request" />
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="row">
+                <label>Full name
+                  <input name="name" autocomplete="name" required />
+                </label>
+                <label>Phone
+                  <input name="phone" autocomplete="tel" inputmode="tel" required />
+                </label>
+              </div>
+              <label>Address
+                <input name="address" autocomplete="street-address" required />
+              </label>
+              <label>Email (optional)
+                <input name="email" autocomplete="email" inputmode="email" />
+              </label>
+              <label>What do you need?
+                <textarea name="details" rows="5" required></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button type="submit" class="btn btn--primary btn--lg">Send to JC</button>
+                <button type="button" class="btn btn--ghost btn--lg" id="copyBtn">Copy</button>
+              </div>
+
+              <div class="after" id="after" style="display:none">
+                <div class="after__title">Sent. Want the fastest reply?</div>
+                <div class="after__sub">Tap to text JC the same details (recommended).</div>
+                <div class="after__actions">
+                  <a class="btn btn--secondary btn--lg" id="textAfter" href="sms:+12602981652">Text JC</a>
+                  <a class="btn btn--primary btn--lg" href="tel:+12602981652">Call JC</a>
+                </div>
+              </div>
+
+              <p class="tiny">Form submits to Formspree (email to JC) then offers one-tap text/call.</p>
+              <div class="toast" id="toast" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">The Industry Standard Tree Service</div>
+          <div class="tiny">Fort Wayne, IN • (260) 298-1652</div>
+        </div>
+        <div class="footer__right"><a href="#top">Back to top</a></div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Quote modal -->
+  <div class="modal" id="quoteModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Request free quote">
+      <div class="modal__head">
+        <div>
+          <div class="kicker">Free Quote</div>
+          <h3 class="modal__title">Call or Text is fastest</h3>
+        </div>
+        <button class="iconBtn" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal__body">
+        <p>Tap below, or use the form if you prefer.</p>
+        <div class="modal__actions">
+          <a class="btn btn--primary btn--full" href="tel:+12602981652">Call JC</a>
+          <a class="btn btn--secondary btn--full" href="sms:+12602981652">Text JC</a>
+          <a class="btn btn--ghost btn--full" href="#contact" data-close>Use Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
