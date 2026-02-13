@@ -7,6 +7,9 @@
   <meta name="description" content="Tree removal, stump grinding, trimming & storm cleanup in Fort Wayne and Northeast Indiana. Call or text for a free quote." />
   <meta name="theme-color" content="#1f3a2b" />
 
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon-512.png" sizes="512x512">
+
   <!-- Social (OG = “Open Graph” preview image used by Facebook/iMessage/etc.) -->
   <meta property="og:title" content="The Industry Standard Tree Service" />
   <meta property="og:description" content="Fast, safe, clean tree service. Call/text for a free quote." />
@@ -37,10 +40,12 @@
       "addressCountry": "US"
     }
   }
+
   </script>
 
   <style>
     /* Light additions just for images + gallery (keeps your existing styles.css intact) */
+
 
     /* HERO image: match gallery card height so layout feels consistent */
     .hero__image{
@@ -109,6 +114,40 @@
       .hero__image{height:260px}
       .jcWrap img{height:240px}
     }
+/* Topbar logo swap */
+.brand{
+  display:flex;
+  align-items:center;
+}
+.brand__logo{
+  height:40px;
+  width:auto;
+  max-width: 260px;
+  display:block;
+}
+@media (max-width: 720px){
+  .brand__logo{height:32px;}
+}
+/* REMOVE HERO BOTTOM GAP */
+.hero{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.fineprint{
+  margin-bottom: 0 !important;
+}
+
+.section[aria-label="Fast quote CTA"]{
+  margin-top: 0 !important;
+  padding-top: 8px !important;
+}
+
+/* tighten proof block spacing */
+.proof{
+  margin-bottom: 8px !important;
+}
+
   </style>
 </head>
 
@@ -116,10 +155,14 @@
   <!-- Sticky call bar -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__mark">IS</span>
-        <span class="brand__name">Industry Standard Tree Service</span>
-      </a>
+<a class="brand" href="#top" aria-label="Home">
+  <img
+    src="assets/industry-standard-header-logo.png"
+    alt="The Industry Standard Tree Service"
+    class="brand__logo"
+  />
+</a>
+
 
       <div class="topbar__actions">
         <a class="btn btn--ghost" href="#services">Services</a>
@@ -387,4 +430,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-
