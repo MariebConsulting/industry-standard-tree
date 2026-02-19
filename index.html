@@ -11,7 +11,6 @@
   <meta property="og:title" content="The Industry Standard Tree Service" />
   <meta property="og:description" content="Safe. Clean. Precise. Call/text for a free quote." />
   <meta property="og:type" content="website" />
-  <!-- IMPORTANT: you have jc.jpg, not og.jpg -->
   <meta property="og:image" content="assets/jc.jpg" />
   <meta property="og:image:alt" content="JC in the bucket truck" />
 
@@ -60,7 +59,6 @@
       background:rgba(255,255,255,.35);
       overflow:hidden;
     }
-    /* NEW: allow overlay badge on specific photos without changing layout */
     .shot__media{
       position:relative;
       width:100%;
@@ -123,7 +121,6 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#top" aria-label="Home">
-        <!-- REVERTED: bubbled IS icon + words only -->
         <span class="brand__mark">IS</span>
         <span class="brand__name">The Industry Standard Tree Service</span>
       </a>
@@ -156,14 +153,12 @@
         <div class="hero__copy">
           <p class="badge">FORT WAYNE • NORTHEAST INDIANA • 46835</p>
 
-          <!-- HERO WORDS -->
           <h1>
             SAFE & EFFICIENT<br>
             <span class="accent">COMPLETE TREE</span><br>
             SERVICE
           </h1>
 
-          <!-- HERO DESCRIPTION -->
           <p class="lead">
             Complete tree and stump removal, trimming and pruning, storm cleanup, vegetation and land clearing services.
             <strong>Call or text for a free quote.</strong>
@@ -172,7 +167,6 @@
           <div class="cta">
             <a class="btn btn--primary btn--lg" href="tel:+12602981652">Call Now</a>
             <a class="btn btn--secondary btn--lg" href="sms:+12602981652">Text Now</a>
-            <!-- CHANGE: go directly to form section -->
             <a class="btn btn--ghost btn--lg" href="#contact">Use Form</a>
           </div>
 
@@ -190,8 +184,6 @@
               <div class="proof__sub">Rapid response for storm damage</div>
             </div>
           </div>
-
-          <!-- REMOVED: * fineprint line -->
         </div>
 
         <div class="hero__media">
@@ -208,7 +200,6 @@
             </div>
           </div>
 
-          <!-- HERO IMAGE -->
           <div class="hero__image">
             <img class="heroPhoto" src="assets/hero.jpg" alt="Tree service crew working safely in a bucket truck" loading="eager" />
           </div>
@@ -229,34 +220,52 @@
         <div class="reviewGrid">
           <article class="reviewCard">
             <div class="reviewTop">
-              <div class="reviewStars">★★★★★</div>
-              <div class="reviewMeta">Google</div>
+              <div class="reviewLeft">
+                <div class="reviewAvatar" aria-hidden="true">W</div>
+                <div class="reviewId">
+                  <div class="reviewName">William S.</div>
+                  <div class="reviewStars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="reviewBadge">Google</div>
             </div>
-            <p class="reviewText">“Very helpful when scheduling and the work was done quickly and well.”</p>
+            <p class="reviewText">“Called the number on a sign, JC answered and I was scheduled in minutes.”</p>
           </article>
 
           <article class="reviewCard">
             <div class="reviewTop">
-              <div class="reviewStars">★★★★★</div>
-              <div class="reviewMeta">Google</div>
+              <div class="reviewLeft">
+                <div class="reviewAvatar" aria-hidden="true">D</div>
+                <div class="reviewId">
+                  <div class="reviewName">David M.</div>
+                  <div class="reviewStars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="reviewBadge">Google</div>
             </div>
             <p class="reviewText">“Very friendly and did a great job cleaning the work area when they were done.”</p>
           </article>
 
           <article class="reviewCard">
             <div class="reviewTop">
-              <div class="reviewStars">★★★★★</div>
-              <div class="reviewMeta">Google</div>
+              <div class="reviewLeft">
+                <div class="reviewAvatar" aria-hidden="true">C</div>
+                <div class="reviewId">
+                  <div class="reviewName">Chris Y.</div>
+                  <div class="reviewStars" aria-label="5 out of 5 stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="reviewBadge">Google</div>
             </div>
-            <p class="reviewText">“Professional, on time, and the cleanup was spotless. Would hire again.”</p>
+            <p class="reviewText">“Professional, on time, and the cleanup was spotless. They were very careful with my property. Would hire again.”</p>
           </article>
         </div>
 
         <div class="reviewActions">
-          <a class="btn btn--primary" href="https://www.google.com/search?q=The+Industry+Standard+Tree+Service+LLC+Fort+Wayne+IN#lrd=0x0:0x0,1,,,," target="_blank" rel="noopener">
+          <a class="btn btn--primary" href="https://www.google.com/search?q=The+Industry+Standard+Tree+Service+LLC+Fort+Wayne+IN" target="_blank" rel="noopener">
             Read all reviews on Google
           </a>
-          <a class="btn btn--secondary" href="https://www.google.com/search?q=The+Industry+Standard+Tree+Service+LLC+Fort+Wayne+IN#lrd=0x0:0x0,3,,,," target="_blank" rel="noopener">
+          <a class="btn btn--secondary" href="https://www.google.com/search?q=The+Industry+Standard+Tree+Service+LLC+Fort+Wayne+IN" target="_blank" rel="noopener">
             Leave a review
           </a>
         </div>
@@ -277,7 +286,6 @@
           <article class="card"><h3>Trimming / Pruning</h3><p>Health, safety, and clearance trims — done right, not hacked.</p></article>
           <article class="card"><h3>Storm & Emergency Cleanup</h3><p>Rapid response when trees fall, split, or threaten structures.</p></article>
           <article class="card"><h3>Cabling / Bracing</h3><p>Structural support options when removal isn’t the best move.</p></article>
-          <!-- CHANGE: Land Clearing copy -->
           <article class="card"><h3>Land Clearing</h3><p>Clearing and brush removal for any size of lot or project.</p></article>
         </div>
 
@@ -313,13 +321,11 @@
             <figcaption>Climbing and Bucket truck operations</figcaption>
           </figure>
 
-          <!-- SWAPPED: bottom photos -->
           <figure class="shot">
             <img src="assets/job4.jpg" alt="Tree service job photo 4" loading="lazy">
             <figcaption>Pruning, trimming, and cleanup</figcaption>
           </figure>
 
-          <!-- POWERLINES BADGE: top-left overlay (NOT in caption) -->
           <figure class="shot">
             <div class="shot__media">
               <span class="shot__badge">Including powerlines</span>
@@ -361,7 +367,6 @@
                 <a class="btn btn--secondary btn--full" href="sms:+12602981652">Text Now</a>
               </div>
 
-              <!-- JC PHOTO (requested) -->
               <div class="jcPhoto" aria-label="JC photo">
                 <img src="assets/jc.jpg" alt="JC in the bucket truck" loading="lazy">
               </div>
@@ -393,7 +398,6 @@
 
               <div class="form__actions">
                 <button type="submit" class="btn btn--primary btn--lg">Send to JC</button>
-                <!-- REMOVED: Copy button -->
               </div>
 
               <div class="after" id="after" style="display:none">
@@ -405,7 +409,6 @@
                 </div>
               </div>
 
-              <!-- REMOVED: “Form submits to Formspree...” line -->
               <div class="toast" id="toast" role="status" aria-live="polite"></div>
             </form>
           </div>
