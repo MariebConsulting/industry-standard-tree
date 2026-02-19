@@ -181,3 +181,65 @@ input, textarea{border-radius:14px; border:1px solid rgba(0,0,0,.18); padding:12
   .fab{display:flex}
   .topbar__actions .btn--ghost{display:none}
 }
+/* ===================== Reviews (no map) ===================== */
+.thinRule{
+  height:1px;
+  width:100%;
+  background: rgba(0,0,0,.14);
+  margin: 14px 0 18px;
+}
+
+.reviewGrid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:12px;
+}
+
+.reviewCard{
+  padding:16px;
+  border-radius:18px;
+  border:1px solid var(--edge);
+  background:rgba(255,255,255,.40);
+}
+
+.reviewTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.reviewStars{
+  font-weight:900;
+  letter-spacing:.06em;
+  color: rgba(0,0,0,.78);
+}
+
+.reviewMeta{
+  font-size:12px;
+  font-weight:900;
+  color: rgba(0,0,0,.60);
+  border:1px solid rgba(0,0,0,.12);
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(255,255,255,.35);
+}
+
+.reviewText{
+  margin:0;
+  color: rgba(0,0,0,.74);
+  line-height:1.55;
+  font-weight:700;
+}
+
+.reviewActions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+
+@media (max-width: 980px){
+  .reviewGrid{ grid-template-columns:1fr; }
+}
